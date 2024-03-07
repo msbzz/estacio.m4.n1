@@ -10,33 +10,31 @@ em listas;
 Empregar elementos visuais em um aplicativo React Native.
 
 ## Microatividade 1: Configurar o ambiente de desenvolvimento React Native
+
 - Material necessário para a prática
 
 Editor de texto ou IDE sendo opções sugeridas: Notepad++, Nano Editor, VS Code;
 Navegador Web: Google Chrome, Firefox, MS Edge, Safari ou Opera;
 Node.js e npm;
+
 - Procedimentos
 
-Esta atividade tem como objetivo guiar os passos para a configuração do ambiente de
+Esta atividade tem como objetivo preparar a configuração do ambiente de
 desenvolvimento React Native para a plataforma Windows, MacOS e Linux,
 fornecendo-lhes as ferramentas essenciais e orientações para começar a criar
-aplicativos móveis com esta tecnologia. A seguir, você terá os passos necessários para
-a instalação do Node.JS e do framework React para os três ambientes.
+aplicativos móveis com esta tecnologia.  
 
 No meu caso foi feito para ambiente Windows
 
-Instalando o React Native no Windows
+Instalando o VSCODE : https://code.visualstudio.com/
 
-1. Para instalar o React no Windows, você precisa ter o Node.js e o npm (Node
-Package Manager) instalados em seu sistema. Se você ainda não os instalou, siga
-estas etapas:
-Visite a página de download do Node.js em: https://nodejs.org/en/download/
-Faça o download do instalador para o seu sistema Windows utilizando a versão.
-Para instalar o Node.js e o npm, execute o instalador e siga cuidadosamente as
-instruções fornecidas.
+Instalando o React Native no Windows : https://nodejs.org/en/download/
 
+Instalando o Node :  https://nodejs.org/en
  
-2. Após a conclusão da instalação, você pode verificar se o Node.js e o npm estão
+Instalando o react-native : https://reactnative.dev/docs/environment-setup
+
+2. Após a conclusão das instalações, você pode verificar se o Node.js e o npm estão
 instalados abrindo um prompt de comando e executando os seguintes comandos:
 
 > node --version 
@@ -44,74 +42,59 @@ instalados abrindo um prompt de comando e executando os seguintes comandos:
 
 <img src="images/versao.node.npm.png" alt="" style="width: 55%; display: block;"/>
  
-3. Agora, para instalar o Create React App globalmente, abra um prompt de comando e
-execute o seguinte comando:
-
-
-> npm install -g create-react-app
-
-obs: optei por instalar local devido a outros projetos de estudo que podem usar versões diferentes
-
-> npm install react-native
-
-Documentação do React Native: https://reactnative.dev/docs/getting-started
+ - react-native
 
 <img src="images/versao.react.native.png" alt="" style="width: 55%; display: block;"/>
 
-4. Agora que você tem o Create React App instalado, pode usá-lo para criar um novo
-projeto React. Para fazer isso, abra um prompt de comando, vá para o diretório onde
-você deseja que o projeto fique e execute o seguinte comando:
 
-> create-react-app my-app
 
-Substitua “my-app” pelo nome desejado para seu projeto. O Create React App criará
-um novo diretório com o nome especificado e gerará um novo projeto React com uma
-estrutura e configuração de projeto recomendadas.
+Optei pelo Expo pois é uma plataforma de desenvolvimento que facilita a criação de aplicativos React Native.
 
-> npx react-native init MyApp
+Ele fornece uma variedade de ferramentas e recursos, incluindo: 
 
-<img src="images/myapp.projeto.reactNative.png" alt="" style="width: 55%; display: block;"/>
+   - Uma CLI que permite que você crie, configure e execute aplicativos React Native.
+   - Um conjunto de APIs pré-construídas que você pode usar para adicionar funcionalidades comuns ao seu aplicativo, como autenticação,      geolocalização e push notifications.
+   -Um ambiente de desenvolvimento online que permite que você crie e teste seus aplicativos sem precisar instalar nenhum software em seu computador.
 
+obs: outro detalhe foi optar o yarn ao invés do npm que tem foco na velocidade, segurança e confiabilidade.
+
+>npm install --global yarn
+
+4. Agora abra um prompt e vá para o diretório onde você deseja que o projeto fique e execute o seguinte comando:
+
+> npx create-expo-app MyApp
+
+    
 5. Depois que o projeto for criado, vá para o diretório do projeto executando o seguinte
 comando no prompt de comando:
 
 > cd MyApp
 
+> code .
 
-<img src="images/vscode.projeto.png" alt="" style="width: 55%; display: block;"/>
+<img src="images/vscode.expo.png" alt="" style="width: 55%; display: block;"/>
 
-
+<BR>
 6. Substitua “my-app” pelo nome do diretório do projeto "MyApp". Agora, inicie o servidor de
 desenvolvimento executando o seguinte comando:
 
-> npm start
+> yarn start ou  npm start 
 
-<img src="images/npm.start.png" alt="" style="width: 55%; display: block;"/>
+<img src="images/expo.png" alt="" style="width: 55%; display: block;"/>
 
-### Configurações adicionais
+ ### Configurações adicionais
 
-Além dos passos anteriores, algumas outras ferramentas são necessárias para que o
-ambiente esteja completo e você seja capaz de criar seus apps.
+ - Instalação do Android Studio  
 
- 
-- Instalação do Expo (opcional): Para uma configuração mais rápida e simplificada,
-você pode instalar o Expo, uma ferramenta que facilita o desenvolvimento React
-Native com uma experiência de desenvolvimento mais amigável.
+  Vá para https://developer.android.com/?hl=pt-br 
+  
+  procure logo abaixo por "Fazer download do android studio"
 
-- Instalação do Android Studio (para desenvolvimento Android): A instalação do
-Android Studio é necessária para criar aplicativos React Native para a plataforma
-Android. A seguir estão os os passos resumidos para a instalação do Android Studio:
- 
+ <img src="images/install.androidStudio.png" alt="" style="width: 55%; display: block;"/>
 
-1)      Baixe o Android Studio:
+<BR>
 
-Acesse o site oficial do Android Studio em developer.android.com/studio e clique no
-botão "Download" para obter o instalador adequado ao seu sistema operacional
-(Windows, macOS ou Linux).
-
- 
-https://developer.android.com/?hl=pt-br
-
+- No meu caso minha instalação ficou assim :
 
 Android Studio Giraffe | 2022.3.1 Patch 3
 Build #AI-223.8836.35.2231.11005911, built on October 25, 2023
@@ -127,20 +110,64 @@ Registry:
 
 Non-Bundled Plugins:
     Dart (223.8977)
-    io.flutter (76.3.2)
+    io.flutter (76.3.2) 
 
 - Android Studio
 
+ 
 <img src="images/androidStudio.png" alt="" style="width: 55%; display: block;"/>
+ <BR>
+- Android SDK 
 
-- Android SDK
+ <BR>
+ <img src="images/androidSdk.png" alt="" style="width: 55%; display: block;"/>
 
-<img src="images/androidSdk.png" alt="" style="width: 55%; display: block;"/>
+  <BR>
+ - Emulator : No meu caso, optei por executar o emulador via arquivo bat
+  
+ <BR>
+<img src="images/emulador.bat" alt="" style="width: 55%; display: block;"/>
 
-- Emulator
-
-<img src="images/npm.start.png" alt="" style="width: 55%; display: block;"/>
-
+  <BR>
 - Final Microtavidade 1
 
-<img src="images/microatividade1.final.png" alt="" style="width: 55%; display: block;"/>
+ <BR> 
+ <img src="images/microatividade1.final.png" alt="" style="width: 55%; display: block;"/>
+ 
+<br>
+
+## Microatividade 2 : Implementar a funcionalidade de entrada de texto em um componente React Native
+
+
+- Criar pasta 'src' e em seguida pasta 'components\index.tsx' 
+
+ <BR> 
+ <img src="images/microatividade2.codigo.final.png" alt="" style="width: 55%; display: block;"/>
+
+ <BR>
+
+  - Resultados esperados
+
+Ao seguir esses passos, você terá implementado com sucesso a
+funcionalidade de entrada de texto em um componente React Native. O
+componente permitirá que o usuário insira texto e o traduzirá para
+emojis de pizza, similar ao exemplo fornecido.
+
+<img src="images/microatividade2.final.png" alt="" style="width: 55%; display: block;"/>
+
+## Microatividade 3: Implementar um Componente de Lista Dinâmica (ScrollView)
+
+- Nessa atividade, optei por experimentar outro tamanho de fontes assim como criação de estilos
+
+<BR>
+
+<img src="images/microatividade3.final.png" alt="" style="width: 55%; display: block;"/>
+
+<BR>
+- Outro ponto foi considerar cada microatividade como sendo um compomente
+
+<BR>
+
+<img src="images/app.microatividade3.2.final.png" alt="" style="width: 55%; display: block;"/>
+
+
