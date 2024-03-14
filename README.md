@@ -345,9 +345,20 @@ e <Image>.
  - Aplicativo 'MeetingApp' tem o objetivo de atender as demandas basicas, tendo um start apartir de uma 
  lista pré estabelecida para podemos fazer filtros e edições,remoções e cadastros.
 
+ 
+<BR>
+<img src="images/meeting_app.telas.png" alt="" style="width: 55%; display: block;"/>
 
 <BR>
-<img src="images/meeting_app.apresentacao.png" alt="" style="width: 55%; display: block;"/>
+
+ - Foi utilizado o 'Expo' que é uma plataforma de desenvolvimento que facilita a criação de aplicativos 
+ React Native.
+ 
+ - Para sua execução esteja na pastas do projeto 'meetingApp' abra o prompt de comando e execute
+ '> npx expo start' considerando que o emulador do android já esteja ativo
+  
+<BR>
+<img src="images/meeting_app.expo.png" alt="" style="width: 55%; display: block;"/>
 
 <BR>
 
@@ -355,24 +366,57 @@ e <Image>.
  alteradas realizando-se um click sobre os mesmos onde é apresentada uma tela para edição e remoção
 
 
-
 <BR>
 <img src="images/meeting_app.telas.png" alt="" style="width: 55%; display: block;"/>
 
 <BR>
 
- - A adição é feita clicando no 'floating button' abaixo a direita e o filtro no button acima a direita
+ - A adição é feita clicando no 'floating button +' abaixo a direita e o filtro no button acima a direita
 
 
 <BR>
-<img src="images/meeting_app.apresentacao.png" alt="" style="width: 55%; display: block;"/>
+<img src="images/meeting_app.cadastro.png" alt="" style="width: 55%; display: block;"/>
 
 <BR>
-- As edições,remoções e cadastros não são persistidos em banco,api ou local storage, são manipulados
-em memoria através de um Context Provider 
 
+- As edições,remoções são executadas através de um click sobre o item da lista onde será apresentada
+uma tela onde é possivel alterar qualquer campo
 
 <BR>
-<img src="images/meeting_app.expo.png" alt="" style="width: 55%; display: block;"/>
+<img src="images/meeting_app.edicao.png" alt="" style="width: 55%; display: block;"/>
+
+<BR>
+
+- obs1: a carga inicial e feita através de arquivos 'MOCKs' tanto para a lista de clientes
+como para as categorias
+
+- obs2: as operações de CRUD não são persistidas em banco,api ou local storage, são manipulados
+em memoria através de um Context Provider, sendo assim, o mock clientes não é alterado 
+
+- obs2: devido as images se tratarem de 'links' com imagens da internet, sua renderização vai depender
+da 'qualidade de internet' tanto no seu aparelho quanto no host de origem 
+
+<BR>
+<img src="images/meeting_app.mocks.png" alt="" style="width: 55%; display: block;"/>
+
+<BR>
+
+- A aplicação do filtro é acionada através do botão 'lupa' acima a direita onde 
+é apresentado um 'form modal' modal com as opções de filtro que são, categorias
+e conteudo do nome da empresa. Tambem existe um compomente 'chek-box' onde e
+feito o controle se o filtro esta ou não aplicado a lista.
+ 
+ 
+<BR>
+<img src="images/meeting_app.filtro.png" alt="" style="width: 55%; display: block;"/>
+
+<BR>
+
+- obs: a remoção da aplicação do filtro é feita voltando a tela de filtro e 
+removendo a seleção do 'check-box' e confirmando.
+
+ 
+<BR>
+<img src="images/meeting_app.remove.filtro.png" alt="" style="width: 55%; display: block;"/>
 
 <BR>
