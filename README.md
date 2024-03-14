@@ -351,28 +351,28 @@ e <Image>.
 
 <BR>
 
- - A apresentação esta em forma de lista com seções e os itens tem imagens associadas que podem ser 
- alteradas realizando-se um click sobre o item onde é apresentada uma tela para edição e cadastro
+ - A apresentação esta em forma de lista com seções onde temos imagens associadas a cada item que podem ser 
+ alteradas realizando-se um click sobre os mesmos onde é apresentada uma tela para edição e remoção
 
+
+
+<BR>
+<img src="images/meeting_app.telas.png" alt="" style="width: 55%; display: block;"/>
+
+<BR>
+
+ - A adição é feita clicando no 'floating button' abaixo a direita e o filtro no button acima a direita
 
 
 <BR>
 <img src="images/meeting_app.apresentacao.png" alt="" style="width: 55%; display: block;"/>
 
 <BR>
-
- - A adição é feita clicando no 'floatbutton' abaixo a direita e o filtro no button acima a direita
-
-
-<BR>
-<img src="images/meeting_app.apresentacao.png" alt="" style="width: 55%; display: block;"/>
-
-<BR>
-- As edições,remoções e cadastros não são persistidos em banco,api ou localstorage, são manipulados
+- As edições,remoções e cadastros não são persistidos em banco,api ou local storage, são manipulados
 em memoria através de um Context Provider 
 
 
 <BR>
-<img src="images/meeting_app.expo.pngg" alt="" style="width: 55%; display: block;"/>
+<img src="images/meeting_app.expo.png" alt="" style="width: 55%; display: block;"/>
 
 <BR>
