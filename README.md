@@ -47,6 +47,8 @@ No meu caso foi feito para ambiente Windows
 ``` 
 Instalando o VSCODE : https://code.visualstudio.com/
 
+Instalando o android studio : https://bit.ly/492ToHS
+
 Instalando o React Native no Windows : https://nodejs.org/en/download/
 
 Instalando o Node :  https://nodejs.org/en
