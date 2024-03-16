@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Text, TextInput, View } from "react-native";
 
-const PizzaTranslator = () => {
+const PizzaTranslator = ({ navigation }) => {
   const [text, setText] = useState('');  
   return (
     <View style={{padding: 10 }}>

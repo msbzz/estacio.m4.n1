@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 
  
 
-const DisplayAnImageWithStyle = () => {
+const DisplayAnImageWithStyle = ({ navigation }) => {
 
   return (
 

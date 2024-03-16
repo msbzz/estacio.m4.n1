@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   
   });
 
-  const FlatListBasics = () => {
+  const FlatListBasics = ({ navigation }) => {
 
     return (
   

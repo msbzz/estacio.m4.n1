@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-function OlaMundo() {
+function OlaMundo({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Ola Mundo</Text>

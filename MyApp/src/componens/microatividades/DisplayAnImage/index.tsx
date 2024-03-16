@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 
   
 
-const DisplayAnImage = () => {
+const DisplayAnImage = ({ navigation }) => {
 
   return (
 

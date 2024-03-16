@@ -12,7 +12,7 @@ const logo = {
   
    
   
-  const SVComponent  = () => (
+  const SVComponent  = ({ navigation }) => (
   
     <ScrollView>
   

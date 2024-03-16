@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
 
  
 
-const SectionListBasics = () => {
+const SectionListBasics = ({ navigation }) => {
 
   return (
 

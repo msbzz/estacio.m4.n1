@@ -165,6 +165,18 @@ navegador após a instalação.
  
 <br>
 
+## Inicio das Microatividades (Compomentes)
+
+```
+ Foi adaptado um menu drawer para o acesso as atividades porem serão mantidas a imagems 
+ que indica a chamadas originais aos compomentes
+
+``` 
+<BR> 
+ <img src="images/microatividades.drawer.menu.png" alt="" style="width: 85%; display: block;"/>
+ 
+<br>
+
 ## 2 - Implementar a funcionalidade de entrada de texto em um componente React Native
 
 - Descrição:
