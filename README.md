@@ -165,11 +165,13 @@ navegador após a instalação.
  
 <br>
 
-## Inicio das Microatividades (Compomentes)
+# Inicio das Microatividades (Compomentes)
 
 ```
  Foi adaptado um menu drawer para o acesso as atividades porem serão mantidas a imagems 
- que indica a chamadas originais aos compomentes
+ que indica a chamadas originais aos compomentes assim como a numerção das atividades, 
+ como forma de referência a especificação original.  
+
 
 ``` 
 <BR> 
