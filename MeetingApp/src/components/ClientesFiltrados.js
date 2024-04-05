@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
 import { useClientes } from '../context/ClientesContext';
-import CustomCheckbox from '../components/CustomCheckbox'; // Ajuste o caminho conforme necessário
+import CustomCheckbox from '../components/CustomCheckbox';  
 
 const ClientesFiltrados = () => {
   const { getClientesFormatoOriginal, filtrarClientes } = useClientes();

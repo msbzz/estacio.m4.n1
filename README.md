@@ -409,8 +409,9 @@ como para as categorias
 - obs2: as operações de CRUD não são persistidas em banco,api ou local storage, são manipulados
 em memoria através de um Context Provider, sendo assim, o mock clientes não é alterado 
 
-- obs2: devido as images se tratarem de 'links' com imagens da internet, sua renderização vai depender
-da 'qualidade de internet' tanto no seu aparelho quanto no host de origem 
+- obs2: devido as images ***não serem armazenadas no dispositivo e se tratarem de 'links' com imagens 
+da internet***  , sua renderização vai depender da 'qualidade de internet' tanto no seu aparelho 
+quanto no host de origem 
 
 <BR>
 <img src="images/meeting_app.mocks.png" alt="" style="width: 55%; display: block;"/>
@@ -433,6 +434,37 @@ removendo a seleção do 'check-box' e confirmando.
 
  
 <BR>
-<img src="images/meeting_app.remove.filtro.png" alt="" style="width: 55%; display: block;"/>
+<img src="images/meeting_app.remove.filtro.png" alt="" style="width: 45%; display: block;"/>
 
 <BR>
+
+## Organização do código 
+
+  Estruturalmente o código esta dividido em :
+
+
+1. **Navegação e Estrutura**:
+   - O aplicativo utiliza a biblioteca `@react-navigation/native` para gerenciar a navegação entre diferentes telas, como a lista de clientes, cadastro de novos clientes, e edição de clientes existentes.
+
+2. **Contexto de Clientes**:
+   - Implementa um contexto global (`ClientesContext`) para gerenciar o estado dos clientes, permitindo adicionar, remover, atualizar e filtrar clientes, além de buscar clientes por ID e recuperar todos os clientes em seu formato original ou filtrado.
+
+3. **Filtragem e Visualização de Clientes**:
+   - Oferece funcionalidades para filtrar clientes por categoria e nome da empresa, exibindo os resultados filtrados em uma tela específica (`ClientesFiltrados`). Utiliza um checkbox personalizado (`CustomCheckbox`) para ativar ou desativar o filtro de clientes.
+
+4. **Edição de Clientes**:
+   - Permite a edição de detalhes de clientes específicos, como nome, telefone, cidade, estado, email, e imagem, através de uma tela de edição (`EditarScreen`). Os dados podem ser atualizados ou o cliente pode ser removido.
+
+5. **Cadastro de Clientes**:
+   - A tela de cadastro (não detalhada nos códigos fornecidos, mas inferida pela estrutura) permitiria adicionar novos clientes ao sistema, especificando informações como categoria, nome, contato, localização, e imagem.
+
+6. **Componentes Reutilizáveis**:
+   - Utiliza componentes reutilizáveis, como `CardCliente` para exibir informações de clientes em um formato de cartão, e `CustomCheckbox` para criar um checkbox personalizado que pode ser usado em diferentes partes do aplicativo.
+
+7. **Estilização e Layout**:
+   - Aplica estilos específicos para criar uma interface de usuário coesa e amigável, utilizando `StyleSheet` do React Native para definir o layout e a aparência dos componentes visuais.
+
+8. **Dados Mockados**:
+   - Emprega dados mockados para categorias de clientes (`serverCategorias`) e informações de clientes (`server`), simulando um backend para o desenvolvimento e teste do aplicativo.
+
+Em resumo, o aplicativo oferece uma solução completa para o gerenciamento de clientes, desde a visualização e filtragem até o cadastro e edição de informações, tudo dentro de um contexto global acessível por diferentes componentes e telas, proporcionando uma experiência de usuário fluida e integrada em dispositivos móveis.

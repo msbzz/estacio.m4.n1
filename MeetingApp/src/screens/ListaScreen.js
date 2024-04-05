@@ -162,8 +162,7 @@ const ListaScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  // Adicione seus estilos aqui, mantendo os estilos existentes
-  // e adicionando quaisquer novos estilos necessários para o CustomCheckbox e outros ajustes.
+ 
   checkboxContainer: {
     marginRight: 8,
   },
