@@ -252,14 +252,14 @@ dinâmica em uma lista. Isso é útil quando você tem um grande conjunto de
 dados e deseja que apenas os itens visíveis sejam renderizados para economizar recursos.
 
 ``` 
-### 1. Criando uma Lista Simples:
+## 4.1. Criando uma Lista Simples:
 
 - Lista simples usando flatList (você pode substituir os nomes da lista de acordo com sua
 necessidade)
 
 <img src="images/microatividade4.flatList.final.png" alt="" style="width: 55%; display: block;"/>
 
-## 2. Criando uma Lista com Seções:
+## 4.2. Criando uma Lista com Seções:
 
 Lista com seções lógicas, talvez com cabeçalhos de seção, então um SectionList é o caminho a percorrer.
 Usando uma SectionList:
@@ -409,7 +409,7 @@ como para as categorias
 - obs2: as operações de CRUD não são persistidas em banco,api ou local storage, são manipulados
 em memoria através de um Context Provider, sendo assim, o mock clientes não é alterado 
 
-- obs2: devido as images ***não serem armazenadas no dispositivo e se tratarem de 'links' com imagens 
+- obs3: devido as images ***não serem armazenadas no dispositivo e se tratarem de 'links' com imagens 
 da internet***  , sua renderização vai depender da 'qualidade de internet' tanto no seu aparelho 
 quanto no host de origem 
 
